@@ -70,7 +70,7 @@
         <PackageReadmeFile>readme.md</PackageReadmeFile>
         <TargetFramework>net10.0</TargetFramework>
         <PackageId>FormCMS</PackageId>
-        <Version>0.6.8</Version>
+        <Version>0.6.9</Version>
         <Authors>Jason Chen</Authors>
         <Company>FormCms</Company>
         <Description>AI powered CMS </Description>
