@@ -1,3 +1,6 @@
 namespace FormCMS.Auth.Models;
 
-public record KeyAuthConfig(string Key);
+public class KeyAuthConfig(string key)
+{
+    public string Key { get; set; } = key;
+}

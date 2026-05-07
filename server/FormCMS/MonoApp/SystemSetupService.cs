@@ -33,6 +33,7 @@ public class SystemSetupService(
     MonoRunTime runTime,
     IServiceProvider serviceProvider,
     IHostApplicationLifetime lifetime,
+    AuthConfig authConfig,
     SystemSettings systemSettings
 ) : ISystemSetupService
 {
@@ -269,7 +270,7 @@ public class SystemSetupService(
 
         var newSettings = settings with { ApiKey = apiKey ?? "" };
         settingsStore.Save(newSettings);
-        RestartApp();
+        authConfig.KeyAuthConfig?.Key = apiKey;
         return Task.CompletedTask;
     }
 
