@@ -47,7 +47,7 @@ Watch FormCMS build a complete Library system (Entities, Data, Queries, and UI) 
 <td align="center" width="33%">
 <h3>🎨 Frontend Developers</h3>
 <p><strong>Build with AI agents.</strong> Connect Antigravity, Cursor, or Codex to the built-in MCP server — the agent designs your schema, writes your React app, and deploys it.</p>
-<p><a href="https://github.com/formcms/formcms/wiki/Vite-React-Antigravity-Example">AI agent setup guide →</a></p>
+<p><a href="https://github.com/formcms/formcms/wiki/Build-a-Full%E2%80%90Stack-React-App-with-FormCMS-and-AI-Agents-(Antigravity,-Cursor,-Codex)">AI agent setup guide →</a></p>
 </td>
 <td align="center" width="33%">
 <h3>⚙️ Full-Stack Developers</h3>
