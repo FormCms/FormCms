@@ -1,4 +1,4 @@
-﻿using FormCMS.Auth.Models;
+using FormCMS.Auth.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Options;
 using System.Security.Claims;
@@ -24,17 +24,22 @@ public class ApiKeyAuthenticationHandler : AuthenticationHandler<AuthenticationS
 
     protected override Task<AuthenticateResult> HandleAuthenticateAsync()
     {
-        if (!Request.Headers.TryGetValue(KeyAuthConstants.ApiKeyHeaderName, out var apiKeyHeaderValues))
+        if (!Request.Headers.TryGetValue("Authorization", out var authHeaderValues))
         {
-            return Task.FromResult(AuthenticateResult.Fail("Missing API Key"));
+            return Task.FromResult(AuthenticateResult.Fail("Missing Authorization header"));
         }
 
-        var providedApiKey = apiKeyHeaderValues.FirstOrDefault();
+        var authHeader = authHeaderValues.FirstOrDefault();
+        if (string.IsNullOrEmpty(authHeader) || !authHeader.StartsWith("Bearer ", StringComparison.OrdinalIgnoreCase))
+        {
+            return Task.FromResult(AuthenticateResult.Fail("Invalid Authorization header format. Expected: Bearer <api-key>"));
+        }
+
+        var providedApiKey = authHeader["Bearer ".Length..].Trim();
         if (string.IsNullOrEmpty(providedApiKey))
         {
             return Task.FromResult(AuthenticateResult.Fail("Invalid API Key"));
         }
-
 
         if (providedApiKey != _authConfig.KeyAuthConfig!.Key)
         {
