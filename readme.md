@@ -33,6 +33,39 @@ Watch FormCMS build a complete Library system (Entities, Data, Queries, and UI) 
 
 *Click the image above to watch the full demo on YouTube.*
 
+### 🛠️ Build Full-Stack React Apps using AI Agents (MCP)
+
+Learn how to connect different AI editors to the FormCMS MCP server to scaffold, build, and deploy apps without writing any backend code:
+
+<table width="100%">
+<tr>
+<td align="center" width="33%">
+<strong>Antigravity IDE</strong>
+<a href="https://www.youtube.com/watch?v=D0YpabyIIVQ">
+<img src="https://img.youtube.com/vi/D0YpabyIIVQ/maxresdefault.jpg" width="100%" alt="Antigravity IDE Tutorial" />
+</a>
+<br/>
+<sub><a href="https://www.youtube.com/watch?v=D0YpabyIIVQ">Watch Tutorial →</a></sub>
+</td>
+<td align="center" width="33%">
+<strong>VS Code + Codex</strong>
+<a href="https://www.youtube.com/watch?v=ScFz08tMOnA">
+<img src="https://img.youtube.com/vi/ScFz08tMOnA/maxresdefault.jpg" width="100%" alt="VS Code + Codex Tutorial" />
+</a>
+<br/>
+<sub><a href="https://www.youtube.com/watch?v=ScFz08tMOnA">Watch Tutorial →</a></sub>
+</td>
+<td align="center" width="33%">
+<strong>Cursor AI</strong>
+<a href="https://www.youtube.com/watch?v=Vr7xcrD5Jd8">
+<img src="https://img.youtube.com/vi/Vr7xcrD5Jd8/maxresdefault.jpg" width="100%" alt="Cursor AI Tutorial" />
+</a>
+<br/>
+<sub><a href="https://www.youtube.com/watch?v=Vr7xcrD5Jd8">Watch Tutorial →</a></sub>
+</td>
+</tr>
+</table>
+
 ---
 
 ## 🛠️ Three Ways to Build
@@ -47,7 +80,7 @@ Watch FormCMS build a complete Library system (Entities, Data, Queries, and UI) 
 <td align="center" width="33%">
 <h3>🎨 Frontend Developers</h3>
 <p><strong>Build with AI agents.</strong> Connect Antigravity, Cursor, or Codex to the built-in MCP server — the agent designs your schema, writes your React app, and deploys it.</p>
-<p><a href="https://github.com/formcms/formcms/wiki/Vite-React-Antigravity-Example">AI agent setup guide →</a></p>
+<p><a href="https://github.com/formcms/formcms/wiki/Build-a-Full%E2%80%90Stack-React-App-with-FormCMS-and-AI-Agents-(Antigravity,-Cursor,-Codex)">AI agent setup guide →</a></p>
 </td>
 <td align="center" width="33%">
 <h3>⚙️ Full-Stack Developers</h3>
