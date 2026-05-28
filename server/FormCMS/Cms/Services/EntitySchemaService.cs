@@ -1,4 +1,5 @@
 using System.Collections.Immutable;
+using System.Text.RegularExpressions;
 using FormCMS.Infrastructure.Cache;
 using FluentResults;
 using FluentResults.Extensions;
@@ -478,11 +479,19 @@ public sealed class EntitySchemaService(
         .ShortcutMap(x => LoadSingleAttribute(entity, x,status,ct))
         .Map(x => entity with { Attributes = [..x] });
 
+    private static readonly Regex CamelCaseRegex = new(@"^[a-z][a-zA-Z0-9]*$", RegexOptions.Compiled);
+
     private void VerifyEntity(Entity entity)
     {
         var msg = $"Verification of the entity [{entity.Name}] failed,";
         foreach (var attr in entity.Attributes)
         {
+            if (!CamelCaseRegex.IsMatch(attr.Field))
+            {
+                throw new ResultException(
+                    $"{msg} Field name [{attr.Field}] must be camelCase (e.g. 'coverImage', not 'cover_image').");
+            }
+
             if (!DataTypeHelper.ValidTypeMap.Contains((attr.DataType, attr.DisplayType)))
             {
                 throw new ResultException(

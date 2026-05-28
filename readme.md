@@ -33,6 +33,39 @@ Watch FormCMS build a complete Library system (Entities, Data, Queries, and UI) 
 
 *Click the image above to watch the full demo on YouTube.*
 
+### 🛠️ Build Full-Stack React Apps using AI Agents (MCP)
+
+Learn how to connect different AI editors to the FormCMS MCP server to scaffold, build, and deploy apps without writing any backend code:
+
+<table width="100%">
+<tr>
+<td align="center" width="33%">
+<strong>Antigravity IDE</strong>
+<a href="https://www.youtube.com/watch?v=D0YpabyIIVQ">
+<img src="https://img.youtube.com/vi/D0YpabyIIVQ/maxresdefault.jpg" width="100%" alt="Antigravity IDE Tutorial" />
+</a>
+<br/>
+<sub><a href="https://www.youtube.com/watch?v=D0YpabyIIVQ">Watch Tutorial →</a></sub>
+</td>
+<td align="center" width="33%">
+<strong>VS Code + Codex</strong>
+<a href="https://www.youtube.com/watch?v=ScFz08tMOnA">
+<img src="https://img.youtube.com/vi/ScFz08tMOnA/maxresdefault.jpg" width="100%" alt="VS Code + Codex Tutorial" />
+</a>
+<br/>
+<sub><a href="https://www.youtube.com/watch?v=ScFz08tMOnA">Watch Tutorial →</a></sub>
+</td>
+<td align="center" width="33%">
+<strong>Cursor AI</strong>
+<a href="https://www.youtube.com/watch?v=Vr7xcrD5Jd8">
+<img src="https://img.youtube.com/vi/Vr7xcrD5Jd8/maxresdefault.jpg" width="100%" alt="Cursor AI Tutorial" />
+</a>
+<br/>
+<sub><a href="https://www.youtube.com/watch?v=Vr7xcrD5Jd8">Watch Tutorial →</a></sub>
+</td>
+</tr>
+</table>
+
 ---
 
 ## 🛠️ Three Ways to Build
